@@ -1,0 +1,121 @@
+body {
+  background-color: aliceblue;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+main .fee-calc {
+
+  width: 60vw;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.fee-calc .output {
+  border-radius: 10px 10px 10px 100px;
+  flex: 0.5;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    color: white;
+  }
+}
+
+.fee-calc .output .empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  img {
+    width: 70%;
+  }
+}
+
+
+.fee-calc .input {
+  padding: 2rem;
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 2rem;
+}
+
+.fee-calc .input .submit-btn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+.fee-calc .input label {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.fee-calc .input .submit-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.fee-calc .input .scholarship-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fee-calc .input .input-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fee-calc .input .input-header button {
+  background-color: transparent;
+  text-decoration: underline;
+  border: none;
+  font-size: 1.2rem;
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+main .fee-calc .input .marks-group div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+main .form-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main .form-header button {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+}

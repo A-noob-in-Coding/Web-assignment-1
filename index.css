@@ -1,0 +1,208 @@
+body {
+  background-color: aliceblue;
+}
+
+/* Course Header */
+.courses-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.courses-header p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+@media (min-width: 768px) {
+  .courses-header p {
+    font-size: 3.5rem;
+  }
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e5e7eb !important;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border-color: #d1d5db !important;
+}
+
+/* Admission Card */
+.admission-card {
+  max-width: 1200px;
+}
+
+.admission-bg {
+  background-color: #1a1a1a;
+}
+
+.admission-card h2 {
+  color: white;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.btn-hover-lift {
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+header {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-nav {
+  gap: 0.5rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4b5563 !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #f3f4f6;
+  color: #1a1a1a !important;
+}
+
+.nav-link.active {
+  background-color: #1a1a1a;
+  color: white !important;
+}
+
+/* Mobile Nav Styles */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+  }
+
+  .navbar-nav {
+    gap: 0.25rem;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
+
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #6b7280;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+  color: #1a1a1a;
+}
+
+.nav-link-footer {
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.nav-link-footer:hover {
+  color: #1a1a1a !important;
+  text-decoration: underline;
+}
+
+.card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.list-group-item {
+  border-color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.text-slider {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+main .text-slider span {
+  width: 100%;
+  display: block;
+  font-size: 4rem;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  animation: slide 6s infinite;
+}
+
+main .text-slider span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+main .text-slider span:nth-child(2) {
+  animation-delay: 2s;
+}
+
+main .text-slider span:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
