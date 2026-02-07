@@ -12,21 +12,19 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-  <!-- Header -->
   <header class="px-3 px-lg-4 py-3">
     <div class="container-fluid">
-      <div class="d-flex justify-content-between align-items-center">
-        <!-- Logo -->
-        <a href="#" class="d-flex align-items-center text-decoration-none">
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <a href="index.html" class="d-flex align-items-center text-decoration-none">
           <img src="./logo.png" alt="Learning College Logo" class="rounded-3" style="width: 100px; height: auto;">
         </a>
 
-        <!-- Navigation -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <nav class="navbar navbar-expand-lg">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
@@ -47,9 +45,7 @@
       </div>
     </div>
   </header>
-
   <main class="flex-grow-1">
-    <!-- Hero Banner -->
     <div class="w-100 overflow-hidden" id="home">
       <img src="./herobanner.png" alt="Learning College Hero Banner" class="w-100 d-block"
         style="height: auto; object-fit: cover;">
@@ -233,16 +229,13 @@
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="bg-white border-top mt-auto" id="contact">
     <div class="container py-5">
       <div class="row">
-        <!-- Logo Section -->
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
           <img src="./logo.png" alt="Learning College Logo" class="mb-3" style="width: 100px;">
         </div>
 
-        <!-- Navigation Links -->
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
           <h5 class="mb-3 fw-semibold text-dark">Quick Links</h5>
           <nav class="nav flex-column">
@@ -253,10 +246,9 @@
           </nav>
         </div>
 
-        <!-- Social Media Links -->
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
           <h5 class="mb-3 fw-semibold text-dark">Follow Us</h5>
-          <nav class="nav">
+          <nav class="nav social-nav">
             <a class="nav-link px-2 ps-0 social-icon" href="#" aria-label="Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook"
                 viewBox="0 0 16 16">
@@ -288,7 +280,6 @@
           </nav>
         </div>
 
-        <!-- Contact Info -->
         <div class="col-lg-3 col-md-6">
           <h5 class="mb-3 fw-semibold text-dark">Contact</h5>
           <p class="mb-1 small">Lahore, Pakistan</p>
@@ -297,7 +288,6 @@
         </div>
       </div>
 
-      <hr class="my-4">
 
     </div>
   </footer>

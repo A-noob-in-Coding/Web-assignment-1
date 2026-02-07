@@ -139,3 +139,19 @@ main .form-header button {
   text-decoration: underline;
   font-size: 1.2rem;
 }
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+  main .fee-calc {
+    width: 90%;
+    padding: 0rem;
+    flex-direction: column;
+  }
+
+  main .fee-calc .output {
+    border-radius: 20px 20px 0px 0px;
+  }
+}

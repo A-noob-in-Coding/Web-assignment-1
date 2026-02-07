@@ -2,7 +2,6 @@ body {
   background-color: aliceblue;
 }
 
-/* Course Header */
 .courses-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -32,7 +31,6 @@ body {
   border-color: #d1d5db !important;
 }
 
-/* Admission Card */
 .admission-card {
   max-width: 1200px;
 }
@@ -64,6 +62,7 @@ header {
 
 .navbar {
   padding: 0;
+  width: auto;
 }
 
 .navbar-nav {
@@ -89,21 +88,49 @@ header {
   color: white !important;
 }
 
-/* Mobile Nav Styles */
 @media (max-width: 991.98px) {
+
+  header .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    width: 100%;
+    order: 3;
+  }
+
   .navbar-collapse {
     margin-top: 1rem;
     padding: 1rem;
     background-color: #f9fafb;
     border-radius: 0.5rem;
+    width: 100%;
   }
 
   .navbar-nav {
     gap: 0.25rem;
+    width: 100%;
   }
 
   .nav-link {
     padding: 0.75rem 1rem !important;
+    display: block;
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    border: 2px solid #e5e7eb;
+    padding: 0.5rem 0.75rem;
+    margin-left: auto;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
   }
 }
 
@@ -112,6 +139,14 @@ header {
     flex-direction: row;
     margin-left: auto;
   }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .social-icon {
@@ -170,6 +205,16 @@ main .text-slider span {
   animation: slide 6s infinite;
 }
 
+@media (max-width: 768px) {
+  main .text-slider span {
+    font-size: 2rem;
+  }
+
+  .text-slider {
+    height: 3rem;
+  }
+}
+
 main .text-slider span:nth-child(1) {
   animation-delay: 0s;
 }
@@ -204,5 +249,22 @@ main .text-slider span:nth-child(3) {
 
   100% {
     opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  footer .col-lg-3,
+  footer .col-md-6 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  footer .nav {
+    justify-content: center;
+  }
+
+  footer .nav-link-footer {
+    display: inline-block;
   }
 }
